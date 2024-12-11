@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font for a clean look */
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* White text for better contrast */
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333333; /* Dark text for readability */
+}
+
+/* Heading */
+h1 {
+    color: #6a11cb; /* Match with the gradient background */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #555555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input Field */
+input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="url"]:focus {
+    border-color: #6a11cb; /* Highlight border on focus */
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.5); /* Glow effect */
+}
+
+/* Button */
+button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Response Message */
+#responseMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333333; /* Neutral color for response */
+}
+
+/* Animation for Response Message */
+#responseMessage.show {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
