@@ -1,31 +1,37 @@
-# 🚀 Welcome to Your Personal Portfolio Project
+# 🎥 AI-Powered Video Analysis
 
-## 🌐 Project Info
+A smart video analysis tool that leverages AI/ML techniques to process and extract insights from video footage. This project can be used for object detection, motion tracking, or custom video-based analysis tasks using OpenCV and deep learning models.
 
-**Live URL**: https://lovable.dev/projects/073ed921-0d57-406a-a523-2c5e19b54a5a
+## 📦 Project Info
 
-## ✏️ How Can I Edit This Project?
+This project includes:
+- Video input processing using OpenCV
+- ML model inference via Python (e.g., TensorFlow/PyTorch)
+- Flask-based API or CLI for interacting with the model
+- Result visualization (frames, bounding boxes, logs)
 
-There are several ways to edit and update your portfolio:
+## ✏️ How to Run the Project Locally
 
-### 🔧 Use Lovable
+### 🔧 Requirements
 
-Visit your [Lovable Project](https://lovable.dev/projects/073ed921-0d57-406a-a523-2c5e19b54a5a) and start prompting.  
-Changes made via Lovable will be committed automatically to this repository.
+- Python 3.8+
+- pip
+- Virtualenv (recommended)
 
-### 💻 Use Your Preferred Code Editor
+### ⚙️ Setup Instructions
 
-You can work locally using VS Code or any IDE by following these steps:
-
-```sh
+```bash
 # Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 
-# Step 2: Navigate into the project
-cd <YOUR_PROJECT_NAME>
+# Step 2: Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate     # Windows
+# source venv/bin/activate  # Linux/Mac
 
 # Step 3: Install dependencies
-npm install
+pip install -r requirements.txt
 
-# Step 4: Start the development server
-npm run dev
+# Step 4: Run the app
+python app.py
